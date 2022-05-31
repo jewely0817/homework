@@ -10,6 +10,22 @@ ps 사용법
 $ ps [option]
 
 
+<img width="322" alt="오픈소스 ps" src="https://user-images.githubusercontent.com/106575901/171112107-a55b32ce-1b36-4b7b-9a72-a7656c85ba73.png">
+
+
+<img width="269" alt="오픈소스 ps2" src="https://user-images.githubusercontent.com/106575901/171112853-a7b8f4c5-99e9-49aa-8fb5-f2ef1e52a025.png">
+
+
 [출처] <https://jhnyang.tistory.com/268>
 -----
 
+jobs 명령어는 백그라운드에 실행되고 있는 프로세스나 중지된 프로세스의 목록을 출력해줍니다.
+
+job 번호
+
+job을 입력하고 결과를 보면 가장 첫 번째 열에 1,2,3,4 이런 숫자를 볼 수 있는데 이 숫자는 job 번호를 의미합니다. 중지되거나 백그라운드에서 돌고 싶은 작업이 있을 때 이 job 번호를 이용해서 앞단으로 가져와 실행시켜요.
+
+jobs 기호
+
+두 번째 열에 보면 +,-기호가 있는 프로세스들을 볼 수 있는데 +는 fg나 bg명령어를 쳤을 때 디폴트로 가장 먼저 가져와서 수행하게 될 프로세스를 의미합니다.
+-는 현재 진행중인 job이 끝나면 바로 다음에 수행될 프로세스를 의미합니다.
