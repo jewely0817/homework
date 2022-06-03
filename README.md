@@ -51,6 +51,7 @@ jobs 기호
 |-p|각 프로세스 ID에 대해 한 행씩 출력|
 |command|지정한 명령어를 실행|
 
+[출처]<https://hbase.tistory.com/265>
 -----
 
 kill 명령어
@@ -66,7 +67,6 @@ kill 명령어는 대개 프로세스를 죽일 때 사용합니다. 하지만 �
 |15)SIGTERM|Terminate|기본 값, 종료 요청 시그널|
 |20)SIGTSTP|Temporary Stop| Ctrl + Z 일시 중지 요청 시그널|
 
-[출처] <https://hbase.tistory.com/265>
 -----
 vim에서의 매크로 실행
 vi에서 매트로는 명령어 모드에서 
