@@ -30,6 +30,27 @@ jobs 기호
 두 번째 열에 보면 +,-기호가 있는 프로세스들을 볼 수 있는데 +는 fg나 bg명령어를 쳤을 때 디폴트로 가장 먼저 가져와서 수행하게 될 프로세스를 의미합니다.
 -는 현재 진행중인 job이 끝나면 바로 다음에 수행될 프로세스를 의미합니다.
 
+상태값
+
+|상태|설명|
+|:--:|:--:|
+|Running|작업이 계속 진행중임|
+|Done|작업이 완료되어 0을 반환|
+|Stopped|작업이 일시 중단|
+|Stopped(SIGTSTP)|SIGTSTP 시그널이 작업을 일시 중단|
+|Stopped(SIGSTOP)|SIGSTOP 시그널이 작업을 일시 중단|
+|Stopped(SIGTTIN)|SIGTTIN 시그널이 작업을 일시 중단|
+|Stopped(SIGTTOU)|SIGTTOU 시그널이 작업을 일시 중단|
+
+옵션
+
+|옵션|설명|
+|:--:|:--:|
+|-l|프로세스 그룹 ID를 state 필드 앞에 출력|
+|-n|프로세스 그룹 중에 대표 프로세스 ID를 출력|
+|-p|각 프로세스 ID에 대해 한 행씩 출력|
+|command|지정한 명령어를 실행|
+
 -----
 
 kill 명령어
@@ -45,6 +66,7 @@ kill 명령어는 대개 프로세스를 죽일 때 사용합니다. 하지만 �
 |15)SIGTERM|Terminate|기본 값, 종료 요청 시그널|
 |20)SIGTSTP|Temporary Stop| Ctrl + Z 일시 중지 요청 시그널|
 
+[출처] <https://hbase.tistory.com/265>
 -----
 vim에서의 매크로 실행
 vi에서 매트로는 명령어 모드에서 
