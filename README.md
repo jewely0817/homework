@@ -57,3 +57,5 @@ q + 알파벳을 눌러 특정 알파벳에 매크로를 저장할 수 있다
 4. @a          1회 실행 
 or @@         방금 실행한 매크로 실행
 or 10@a       매크로 10회 실행
+
+[출처] <http://aboutmadlife.blogspot.com/2014/09/linux-vi-macro.html>
