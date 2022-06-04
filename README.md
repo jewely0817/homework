@@ -1,6 +1,16 @@
 # 20213031
 top 명령어는 현재 OS의 상태를 나타내주는 CLI 어플리케이션입니다. 메모리 사용량, CPU 사용량 등을 나타내주며 top를 실행하는 동안에는 주기적인 업데이트로 실시간에 근접한 내용을 보여줍니다. 리눅스에서 top 명령어를 실행하면 아래와 깉이 노출됩니다. 위에는 전체의 요약이 있으며 아래에는 각 프로세스마다 구체적인 내용을 포함하고 있습니다.
 
+top 실행 후 명령어
++ shift + p : CPU 사용률 내림차순
++ shit + m : 메모리 사용률 내림차순
++ shift + t : 프로세스가 돌아가고 있는 시간 순
++ k : kill. k 입력 후 PID 번호 작성. signal은 9
++ f : sort field 선택 화면 -> q 누르면 RES순으로 정렬
++ a : 메모리 사용량에 따라 정렬
++ b : Batch 모드로 작동
++ 1 : CPU Core별로 사용량 보여줌
+
 [출처] <https://sabarada.tistory.com/146>
 -----
 
@@ -15,6 +25,10 @@ $ ps [option]
 
 <img width="269" alt="오픈소스 ps2" src="https://user-images.githubusercontent.com/106575901/171112853-a7b8f4c5-99e9-49aa-8fb5-f2ef1e52a025.png">
 
+ps와 top의 차이점
++ ps는 ps한 시점에 proc에서 검색한 cpu 사용
+
++ top은 proc에서 일정 주기로 합산해 cpu 사용율 출력
 
 [출처] <https://jhnyang.tistory.com/268>
 -----
